@@ -11,9 +11,10 @@
         }
     ],
     "env": {
+        "APP_NAME": "Gilbert's Portfolio",
         "APP_ENV": "production",
-        "APP_DEBUG": "true",
-        "APP_URL": "https://vercel.com/gibekkks-projects/my-portfolio-dutr",
+        "APP_DEBUG": "false",
+        "APP_URL": "https://my-portfolio-dutr.vercel.app",
         "APP_KEY": "base64:PHOODvoAOHW982qq9googqGvdBQpftlAgTlYBlKgwnI=",
 
         "APP_CONFIG_CACHE": "/tmp/config.php",
