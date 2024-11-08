@@ -11,15 +11,16 @@
 	<link rel="shortcut icon" href="assets/images/gt_favicon.png">
 
 	<!-- Bootstrap -->
-	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.no-icons.min.css" rel="stylesheet">
+	{{-- <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.no-icons.min.css" rel="stylesheet"> --}}
 	<!-- Icons -->
-	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+	{{-- <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"> --}}
 	<!-- Fonts -->
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Alice|Open+Sans:400,300,700">
 	<!-- Custom styles -->
 	<link rel="stylesheet" href="assets/css/styles.css">
 
 	<!--[if lt IE 9]> <script src="assets/js/html5shiv.js"></script> <![endif]-->
+    @vite(['resources/sass/app.scss', 'resources/css/styles.css', 'resources/js/app.js', 'resources/js/template.js'])
 </head>
 <body class="home">
 
@@ -43,7 +44,7 @@
 			<div class="navbar-collapse collapse">
 
 				<ul class="nav navbar-nav">
-					<li class="active"><a href="#">Home</a></li>
+					<li class="active"><a href="#">Dashboard</a></li>
 					<li><a href="CV">CV</a></li>
 					<li><a href="projects">Projects</a></li>
 				</ul>
@@ -59,7 +60,7 @@
 
 		<div class="row section topspace">
 			<div class="col-md-12">
-				<p class="lead text-center text-muted">Welcome To My Home Page!</p>
+				<p class="lead text-center text-muted">Welcome To My Dashboard Page!</p>
 			</div>
 		</div> <!-- / section -->
 
@@ -162,8 +163,7 @@
 
 <!-- JavaScript libs are placed at the end of the document so the pages load faster -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-<script src="assets/js/template.js"></script>
-<script src="assets/js/controller.js"></script>
+{{-- <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script> --}}
+{{-- <script src="assets/js/template.js"></script> --}}
 </body>
 </html>
