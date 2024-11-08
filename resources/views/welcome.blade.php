@@ -10,7 +10,8 @@
 
 	<link rel="shortcut icon" href="assets/images/gt_favicon.png">
 
-	@vite(['resources/scss/app.scss', 'resources/js/app.js'])
+	<!-- Bootstrap -->
+	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.no-icons.min.css" rel="stylesheet">
 	<!-- Icons -->
 	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 	<!-- Fonts -->
