@@ -7,7 +7,7 @@
 
     <title>Gilbert's Portfolio</title>
 
-    <link rel="shortcut icon" href="{{ asset('assets/images/gt_favicon.png') }}">
+    <link rel="shortcut icon" href="{{ asset('./assets/images/gt_favicon.png') }}">
 
     <!-- Bootstrap -->
     <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.no-icons.min.css" rel="stylesheet">
@@ -16,7 +16,7 @@
     <!-- Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alice|Open+Sans:400,300,700">
     <!-- Custom styles -->
-    <link rel="stylesheet" href="{{ asset('assets/css/styles.css') }}">
+    <link rel="stylesheet" href="{{ asset('./assets/css/styles.css') }}">
 
     <!--[if lt IE 9]> <script src="assets/js/html5shiv.js"></script> <![endif]-->
 </head>
@@ -26,7 +26,7 @@
     <header id="header">
         <div id="head" class="parallax" parallax-speed="2">
             <h1 id="logo" class="text-center">
-                <img class="img-circle" src="{{ asset('assets/images/guy.jpg') }}" alt="">
+                <img class="img-circle" src="{{ asset('./assets/images/guy.jpg') }}" alt="">
                 <span class="title" style="color: white; text-shadow: 2px 2px 5px black;">Gilbert De Foucauld
                     Winardy</span>
                 <span class="tagline" style="color: white; text-shadow: 2px 2px 5px black;">Informatics Student<br>
@@ -151,7 +151,7 @@
     <!-- JavaScript libs are placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-    <script src="{{ asset('assets/js/template.js') }}"></script>
+    <script src="{{ asset('./assets/js/template.js') }}"></script>
 </body>
 
 </html>
