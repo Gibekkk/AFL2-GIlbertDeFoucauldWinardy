@@ -465,6 +465,7 @@ img {
 }
 .thumbnail:hover img {
   -webkit-filter: saturate(0%);
+  filter: saturate(0%);
 }
 .thumbnail:hover .cover {
   opacity: 1;
