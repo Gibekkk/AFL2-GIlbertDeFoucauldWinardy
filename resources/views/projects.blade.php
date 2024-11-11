@@ -7,7 +7,7 @@
 
     <title>Gilbert's Portfolio</title>
 
-    <link rel="shortcut icon" href="assets/images/gt_favicon.png">
+    <link rel="shortcut icon" href="{{ asset('assets/images/gt_favicon.png') }}">
 
     <!-- Bootstrap -->
     <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.no-icons.min.css" rel="stylesheet">
