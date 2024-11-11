@@ -1,66 +1,79 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Vercel Laravel 10 Starter (PHP 8.3)
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+## Credit
+
+<p align=center><strong>🏋️‍♀️ It works with these frameworks and tools. Discover more at <a href="https://github.com/juicyfx/vercel-examples">examples</a>.</strong></p>
+<p align=center>
+Made with  ❤️  by <a href="https://github.com/f3l1x">@f3l1x</a> (<a href="https://f3l1x.io">f3l1x.io</a>) • 🐦 <a href="https://twitter.com/xf3l1x">@xf3l1x</a>
 </p>
 
-## About Laravel
+Majority of updates taken from pull request by [@cmizzi](https://github.com/cmizzi/vercel-examples)
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Important Files
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+This repository inherits from Laravel 10.x. Important files are the following ones:
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- [`.vercelignore`](./.vercelignore)
+- [`.vercel.json`](./vercel.json)
 
-## Learning Laravel
+## 💯 Versions
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Change the version of `vercel-php` dependency in `.vercel.json` for the version you want to use.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+- `vercel-php@0.7.0` - Node 18.x / PHP 8.3.x (https://vercel-laravel-10-starter.sites.treckstar.net)
+- `vercel-php@0.6.1` - Node 18.x / PHP 8.2.x (https://example-php-8-2.vercel.app)
+- `vercel-php@0.5.4` - Node 18.x / PHP 8.1.x (https://example-php-8-1.vercel.app)
+- `vercel-php@0.4.3` - Node 18.x / PHP 8.0.x (https://example-php-8-0.vercel.app)
+- `vercel-php@0.3.5` - Node 18.x / PHP 7.4.x (https://example-php-7-4.vercel.app)
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## Build assets
 
-## Laravel Sponsors
+Add the following snippet in the `composer.json` file.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+```json
+{
+    "scripts": {
+        "vercel": [
+            "npm install",
+            "npm run build"
+        ]
+    }
+}
+```
 
-### Premium Partners
+## Enable HTTPS
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+See [`app/Http/Middleware/TrustProxies.php`](./app/Http/Middleware/TrustProxies.php).
 
-## Contributing
+```diff
+-   protected $proxies = null;
++   protected $proxies = "*";   
+```
+## Common
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+You still need to setup the basics, such as making an `.env` file, setting an `APP_KEY`, etc.
 
-## Code of Conduct
+Do not save your `APP_KEY` in the `.vercel.json` file. You must set this in the settings.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+### Create `.env` file
 
-## Security Vulnerabilities
+```
+cp .env.example .env
+```
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+### Create `dist` folder
 
-## License
+If you do not want to change the build output folder settings, run this:
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+```
+mkdir dist
+echo "# for vercel output" >> dist/.gitkeep
+```
+
+There is a chance that your local `.dotfiles` have the `dist` folder in a `.gitignore` file, so force add it:
+
+```
+git add dist -f
+git commit -m "chore: dist folder for vercel output"
+git push
+```
