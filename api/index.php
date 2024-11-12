@@ -20,4 +20,4 @@ foreach (scandir(dirname(__DIR__ . '/../public/assets/images')) as $filename) {
     if (is_file($path)) {
         require $path;
     }
-}
+} 
