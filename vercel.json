@@ -10,7 +10,7 @@
     "env": {
         "APP_ENV": "production",
         "APP_DEBUG": "true",
-        "APP_URL": "https://my-portfolio-jet-ten-63.vercel.app",
+        "APP_URL": "https://my-portfolio-psi-lime.vercel.appp",
         "APP_KEY": "base64:j0NJinOqCkq8AMOTRuUCKs6xb/KaJnzJm0b2sZaoGSw=",
 
         "APP_CONFIG_CACHE": "/tmp/config.php",
