@@ -16,7 +16,7 @@
     <!-- Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alice|Open+Sans:400,300,700">
     <!-- Custom styles -->
-    <link rel="stylesheet" href="https://github.com/Gibekkk/my-portfolio/blob/main/public/assets/css/styles.css">
+    <link rel="stylesheet" href="https://raw.githubusercontent.com/Gibekkk/my-portfolio/refs/heads/main/public/assets/css/styles.css?token=GHSAT0AAAAAACYBYLDKG4UTRJWNG7T5IFJEZZTECVQ">
 
     <!--[if lt IE 9]> <script src="assets/js/html5shiv.js"></script> <![endif]-->
 </head>
