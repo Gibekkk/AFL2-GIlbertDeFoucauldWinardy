@@ -22,7 +22,7 @@
 </head>
 
 <body class="home">
-
+    <link rel="stylesheet" href="{{ asset('assets/css/styles.css') }}">
     <header id="header">
         <div id="head" class="parallax" parallax-speed="2">
             <h1 id="logo" class="text-center">

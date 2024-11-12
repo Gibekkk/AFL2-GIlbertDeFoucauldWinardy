@@ -7,7 +7,7 @@
 
     <title>Gilbert's Portfolio</title>
 
-    <link rel="shortcut icon" href="{{ asset('images/gt_favicon.png') }}">
+    <link rel="shortcut icon" href="{{ asset('assets/images/gt_favicon.png') }}">
 
     <!-- Bootstrap -->
     <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.no-icons.min.css" rel="stylesheet">
@@ -26,7 +26,7 @@
     <header id="header">
         <div id="head" class="parallax" parallax-speed="2">
             <h1 id="logo" class="text-center">
-                <img class="img-circle" src="{{ asset('images/guy.jpg') }}" alt="">
+                <img class="img-circle" src="{{ asset('assets/images/guy.jpg') }}" alt="">
                 <span class="title" style="color: white; text-shadow: 2px 2px 5px black;">Gilbert De Foucauld
                     Winardy</span>
                 <span class="tagline" style="color: white; text-shadow: 2px 2px 5px black;">Informatics Student<br>
