@@ -13,6 +13,6 @@ export default defineConfig({
         }),
     ],
     build: {
-        outDir: 'dist/', // Ini output build-nya ke folder public biar langsung di-serve
+        outDir: 'public/assets', // Ini output build-nya ke folder public biar langsung di-serve
     },
 });
