@@ -4,15 +4,8 @@ import laravel from 'laravel-vite-plugin';
 export default defineConfig({
     plugins: [
         laravel({
-            input: [
-                'resources/css/app.css',
-                'resources/js/app.js',
-                'resources/assets/css/styles.css'
-            ],
+            input: ['resources/css/app.css', 'resources/js/app.js'],
             refresh: true,
         }),
     ],
-    build: {
-        outDir: 'public/assets', // Ini output build-nya ke folder public biar langsung di-serve
-    },
 });
