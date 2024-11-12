@@ -16,7 +16,8 @@
     <!-- Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alice|Open+Sans:400,300,700">
     <!-- Custom styles -->
-    <link rel="stylesheet" href="{{ asset('assets/css/styles.css') }}">
+    {{-- <link rel="stylesheet" href="{{ asset('assets/css/styles.css') }}"> --}}
+    @vite(['resources/assets/css/app.css', 'resources/assets/js/app.js', 'resources/assets/css/styles.css'])
 
     <!--[if lt IE 9]> <script src="assets/js/html5shiv.js"></script> <![endif]-->
 </head>
