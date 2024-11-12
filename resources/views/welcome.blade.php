@@ -18,7 +18,7 @@
     <!-- Custom styles -->
     {{-- <link rel="stylesheet" href="{{ asset('assets/css/styles.css') }}"> --}}
     <style>
-        {{ require '../assets/css/styles.css' }}
+        <?php require '../assets/css/styles.css'; ?>
     </style>
 
     <!--[if lt IE 9]> <script src="assets/js/html5shiv.js"></script> <![endif]-->
