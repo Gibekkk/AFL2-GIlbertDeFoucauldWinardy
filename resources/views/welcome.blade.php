@@ -30,7 +30,7 @@
                 <span class="title" style="color: white; text-shadow: 2px 2px 5px black;">Gilbert De Foucauld
                     Winardy</span>
                 <span class="tagline" style="color: white; text-shadow: 2px 2px 5px black;">Informatics Student<br>
-                    <a href=""
+                    <a href="gfoucauld@student.ciputra.ac.id"
                         style="color: white; text-shadow: 2px 2px 5px black;">gfoucauld@student.ciputra.ac.id</a></span>
             </h1>
         </div>
